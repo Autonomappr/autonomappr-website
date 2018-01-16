@@ -3,7 +3,10 @@
 }
 
 #header {
-  background: #f4f4f4!important;
+  /* background: #f4f4f4!important; */
+  background-image: url("/img/drone_background.jpg")!important;
+  background-size: cover;
+  background-position: center;
 }
 
 #header h1, #header h2 {
@@ -15,10 +18,10 @@ color: #111 !important;
 }
 
 #header-divider {
-  border-color: #18bc9c!important;
+  border-color: #e9ecef!important;
 }
 #header-divider::after {
-  background-color: #f4f4f4!important;
+  background-color: transparent!important;
   color: #18bc9c!important;
 }
 
