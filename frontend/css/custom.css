@@ -1,0 +1,27 @@
+#mainNav {
+  background-color: #021613!important;
+}
+
+#header {
+  background: #f4f4f4!important;
+}
+
+#header h1, #header h2 {
+color: #111 !important;
+}
+
+#header-container {
+  height: 30rem;
+}
+
+#header-divider {
+  border-color: #18bc9c!important;
+}
+#header-divider::after {
+  background-color: #f4f4f4!important;
+  color: #18bc9c!important;
+}
+
+#progress .entry {
+  text-align: center;
+}
