@@ -36,3 +36,11 @@ color: #111 !important;
 #about h3 {
   text-align: center;
 }
+
+#team img {
+  width: 100%;
+}
+
+#team h2 {
+  line-height: 1.0em;
+}
