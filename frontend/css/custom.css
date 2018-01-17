@@ -28,3 +28,11 @@ color: #111 !important;
 #progress .entry {
   text-align: center;
 }
+
+#about p {
+  text-align: justify;
+}
+
+#about h3 {
+  text-align: center;
+}
