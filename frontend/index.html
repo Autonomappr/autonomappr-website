@@ -153,12 +153,128 @@
       <div class="container">
         <h2 class="text-center text-uppercase">Progress Blog</h2>
         <hr class="star-dark mb-5">
+
+        <!-- Section Break  -->
+
         <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <p class="entry">COMING SOON</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="col-sm-10 offset-sm-1">
+            <h3>Intro to Autonomappr</h3>
+            <h6>January 16</h6>
+            <p class="entry blog-post">Today, according to Global Projects Database, large projects in the construction industry are late by an average of 20% than originally scheduled with some up to nine years. According to the same study the projects are also are over budget by an average 80% with some as high as 650% [1].  In addition, almost 50 workers are injured every minute of the workweek and 17 deaths occur per day in the USA, according to OSHA [2]. <br><br> Despite technological improvements, many projects are over-budget, over-time and dangerous. Autonomappr aims to provide an accurate site model with labelled point of interests to effectively increase efficiency and mitigate safety concerns by enabling autonomous technology on a construction site. The project objectives are outlined below.</p>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-lg-2 offset-lg-1 col-md-4 col-sm-8 offset-sm-2 center-text"><img class="img-fluid" src="img/objectives/objective1.png" alt=""><p>Autonomous Data Gathering</p></div>
+          <div class="col-lg-2 col-md-4 col-sm-8 offset-sm-2 center-text"><img class="img-fluid" src="img/objectives/objective2.png" alt=""><p>Build a 3D mesh representation of the construction site</p></div>
+          <div class="col-lg-2 col-md-4 col-sm-8 offset-sm-2 center-text"><img class="img-fluid" src="img/objectives/objective3.png" alt=""><p>Enable road and point of interest marking</p></div>
+          <div class="col-lg-2 col-md-4 col-sm-8 offset-sm-2 center-text"><img class="img-fluid" src="img/objectives/objective4.png" alt=""><p>Generate approximate volume measurements</p></div>
+          <div class="col-lg-2 col-md-4 col-sm-8 offset-sm-2 center-text"><img class="img-fluid" src="img/objectives/objective5.png" alt=""><p>Make results available through an API</p></div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <p class="entry blog-post">The team defined constraints and criteria selected to be successful and competitive with the current market.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <h5>Constraints</h5>
+            <table class="constraints">
+              <tr>
+                <td>Cost</td>
+                <td class='description'>Physical platofrm costs less than $3000</td>
+              </tr>
+              <tr>
+                <td>Mass</td>
+                <td class='description'>Physical platofrm weighs less than 6kg</td>
+              </tr>
+              <tr>
+                <td>Accuracy</td>
+                <td class='description'>3D point cloud is accurate within 15cm</td>
+              </tr>
+              <tr>
+                <td>Speed</td>
+                <td class='description'>Able to fully refresh site model twice per day (for area 100x100m)</td>
+              </tr>
+              <tr>
+                <td>Robustness</td>
+                <td class='description'>Able to operate on all terrains typically found on a construction site</td>
+              </tr>
+              <tr>
+                <td>Autonomy</td>
+                <td class='description'>Gathering of raw terrain data must be autonomous</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <h5><strong>Criteria</strong></h5>
+            <table class="criteria">
+              <tr>
+                <td>UX</td>
+                <td class='description'>Enable end users to label roads and points of interest on the 3D model</td>
+              </tr>
+              <tr>
+                <td>Stretch Goal</td>
+                <td class='description'>Automatic road and point of interest detection through semantic segmentation</td>
+              </tr>
+              <tr>
+                <td>Resolution</td>
+                <td class='description'>Exceed a point cloud density of 100 points per square meter</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <br>
+            <p>Since September of 2017, the project progressed through initial ideas to a final design for mechanical, hardware and software components. The solution revolves around a multi-rotor drone that inspects the construction site from above, capturing images and topology data.</p>
+            <p>The data processing pipeline turns the raw data into a usable site model that is useful for end users and other autonomous robots onsite. The team is on schedule to present at the Capstone Symposium in March of 2018.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <p class='reference'>[1]  R. Agarwal, S. Chandrasekaran and M. Sridhar, "Capital Projects & Infrastructure - Imagining construction's digital future," McKinsey&Company, June 2016. [Online]. Available: https://www.mckinsey.com/industries/capital-projects-and- infrastructure/our-insights/imagining-constructions-digital-future. [Accessed 16 October 2017]</p>
+            <p class='reference'>[2]  J. Moody, "A LOOK AT THE ROI OF SAFETY," 12 September 2017. [Online]. Available: https://www.safetyservicescompany.com/topic/uncategorized/look-roi- safety/. [Accessed 16 October 2017].</p>
+          </div>
+        </div>
+
+        <hr class="star-dark mb-5">
+
+        <!-- Section Break  -->
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <h3>Drone Hardware and Assembly</h3>
+            <h6>January 21</h6>
+            <p class="entry blog-post">The second term (Jan - April 2018)  begins with mechanical and hardware assembly of the drone kit. Progressing towards enabling manual flight using an RC control.</p>
+            <p class="entry blog-post">We printed the mounting bracket for the camera hardware and the design for the anti-vibration bed for the controller is complete. Both the mount and the bed dampen the vibration introduced by the drone’s motors to get rid of the noise that can corrupt our location measurements.</p>
+            <div class="col-sm-10 offset-sm-1 center-text">
+              <img class="img-fluid" src="img/our_drone.png" alt="">
+              <p>Lynxmotion HQuad500</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="star-dark mb-5">
+
+        <!-- Section Break  -->
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <br><br>
+            <p class="entry">Stay tuned for more updates!</p>
+            <br><br>
+          </div>
+        </div>
+
+
       </div>
     </section>
 
@@ -185,100 +301,6 @@
       <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
         <i class="fa fa-chevron-up"></i>
       </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">software</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/team/mihai.jpg" alt="">
-              <br>
-              <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">hardware, electrical</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/team/rishab.jpg" alt="">
-              <br>
-              <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">software, electrical</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/team/pavel.jpg" alt="">
-              <br>
-              <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">software</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/team/hugo.jpg" alt="">
-              <br>
-              <!-- <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p> -->
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->

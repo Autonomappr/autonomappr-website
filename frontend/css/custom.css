@@ -44,3 +44,25 @@ color: #111 !important;
 #team h2 {
   line-height: 1.0em;
 }
+
+#progress .blog-post {
+  text-align: justify;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#progress .constraints td, #progress .criteria td {
+  vertical-align: top;
+  min-width: 8em;
+}
+
+#progress .constraints td.description, #progress .criteria td.description {
+  padding-bottom: 1em;
+}
+
+#progress .reference {
+  font-size: 0.3em;
+  color: #aaa;
+}
