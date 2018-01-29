@@ -256,9 +256,45 @@
             <p class="entry blog-post">The second term (Jan - April 2018)  begins with mechanical and hardware assembly of the drone kit. Progressing towards enabling manual flight using an RC control.</p>
             <p class="entry blog-post">We printed the mounting bracket for the camera hardware and the design for the anti-vibration bed for the controller is complete. Both the mount and the bed dampen the vibration introduced by the drone’s motors to get rid of the noise that can corrupt our location measurements.</p>
             <div class="col-sm-10 offset-sm-1 center-text">
-              <img class="img-fluid" src="img/our_drone.png" alt="">
+              <img class="img-fluid" src="img/progress_updates/our_drone.png" alt="">
               <p>Lynxmotion HQuad500</p>
             </div>
+          </div>
+        </div>
+
+        <hr class="star-dark mb-5">
+
+        <!-- Section Break  -->
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <h3>Progress on All Fronts</h3>
+            <h6>January 29</h6>
+
+            <p class="entry blog-post">After a series of design meetings the previous week, the ground work was performed both from a hardware and software perspective. Point cloud filtering, website backend and frontend interfaces, drone flight simulation and hardware setup and bringup were all performed by the team members to ensure that no critical component was left unattended.</p>
+
+            <p class="entry blog-post"><strong>Hardware Setup/Bringup</strong></p>
+            <p class="entry blog-post">After 3D printing the necessary brackets, the drone was assembled and connected to the provided base station running on a laptop and obtained from Ardupilot. This confirmed that all drone modules worked as expected. The next step is to connect the controller to the drone so that manual flight can be performed.</p>
+
+            <p class="entry blog-post"><strong>Point Cloud Filtering</strong></p>
+            <p class="entry blog-post">To filter point clouds, the point cloud is first mapped to an image, where the (x,y) coordinates are mapped to (i,j) indices and the z-coordinate becomes the intensity. This method assumes that the (x,y) coordinates do not contain erroneous data, and that the filtering will be performed on the height data. This simplifies the filtering process while maintaining an accurate representation of the data.</p>
+            <p class="entry blog-post">Given a set resolution, the (x,y) coordinates of each point is mapped to an (i,j) index tuple, and once each point has been mapped, inpainting is applied to avoid image pixels having no associated data. Without inpainting, any filtering method would introduce more erroneous data since it would rely on non-existent data for smoothing, edge enhancement, outlier removal, etc.</p>
+            <p class="entry blog-post">The data is then filtered through a given method, which will be decided upon based on the obtained data from testing. The filtered image can then be mapped back to a point cloud for further data handling (exporting to STL, adding GPS data, etc.).</p>
+
+            <p class="entry blog-post"><strong>POI Website Interface</strong></p>
+            <p class="entry blog-post">In order to add the roads and Points of Interest(POI) on the map, a web interface has been implemented where a user can click and connect different points over an orthophoto or the generated point cloud.</p>
+
+            <div class="col-sm-10 offset-sm-1 center-text">
+              <img class="img-fluid" src="img/progress_updates/website_screenshot.png" alt="">
+              <p>Website Prototype</p>
+            </div>
+
+            <p class="entry blog-post">As shown in the picture above, the interface still requires design work but feature-wise, the website is almost complete. The roads are saved and can be reload by accessing the website. Roads can also be added, deleted, and modified by the user at any point in the process.</p>
+
+            <p class="entry blog-post"><strong>Ardupilot Simulation</strong></p>
+            <p class="entry blog-post">The ROS-enabled Ardupilot simulation was also setup during the week and a pre-built model of a drone was used to perform a given mission plan. From this initial testing, further work can be performed on the mission plan generation, as well as properly linking the simulation with real hardware.</p>
+
+
           </div>
         </div>
 
