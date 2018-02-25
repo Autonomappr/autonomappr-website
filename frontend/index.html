@@ -156,6 +156,40 @@
 
         <div class="row">
           <div class="col-sm-10 offset-sm-1">
+            <h3>Valentine’s Day Update</h3>
+            <h6>February 14</h6>
+
+            <h5>Drone Hardware</h5>
+            <p class="entry blog-post">The hardware platform is complete and ready for testing, with the exception of the camera. Manual flight testing will begin shortly and will expose any errors in calibration or setup that may have occurred.</p>
+
+            <div class="col-sm-10 offset-sm-1 center-text">
+              <img class="img-fluid" src="img/progress_updates/our_drone2.jpg" alt="">
+              <p>Final Drone Hardware (Excluding camera)</p>
+            </div>
+
+            <h5>Camera</h5>
+            <p class="entry blog-post">The camera hardware is currently held back by issues the team has had with interfacing with it. The camera manufacturer has provided the team with the code required to interface with it, but there is work still yet to be done in order to fully integrate it within the drone’s software stack.</p>
+
+            <h5>Mission Planner</h5>
+            <p class="entry blog-post">This is the portion of the pipeline that plans the path that the drone should take given an address or GPS coordinates of the construction site location. So far, the mission planner code is able to generate a set of GPS coordinates that represent the drone’s proposed path. Further work is needed to determine the optimal spacing of points to achieve desired overlap between images. Additionally, the code will eventually need to interface with the drone control software in order to translate the set of points into actual drone movements.</p>
+
+            <div class="col-sm-10 offset-sm-1 center-text">
+              <img class="img-fluid" src="img/progress_updates/mission_planner.jpg" alt="">
+              <p>Mission Planner</p>
+            </div>
+
+            <h5>Drone Control</h5>
+            <p class="entry blog-post">In the context of the project, “Drone Control” refers to the software that will run on the drone itself that instructs the flight control software about what to do (fly to waypoint, take picture, etc.). At the moment, the code runs inside a simulated environment. Some work is left to translate this work into code that will make the drone fly.</p>
+
+          </div>
+        </div>
+
+        <hr class="star-dark mb-5">
+
+        <!-- Section Break  -->
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
             <h3>Progress on All Fronts</h3>
             <h6>January 29</h6>
 
