@@ -17,12 +17,14 @@ color: #111 !important;
   height: 30rem;
 }
 
-#header-divider {
-  border-color: #e9ecef!important;
-}
-#header-divider::after {
-  background-color: transparent!important;
-  color: #18bc9c!important;
+#subtitle {
+  margin-top: 1em;
+  background: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  /* text-shadow: white 0px 0px 2px;
+  color: #18bc9c!important; */
 }
 
 #progress .entry {
