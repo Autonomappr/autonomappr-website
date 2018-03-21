@@ -88,17 +88,6 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-white mb-0">Team</h2>
         <hr class="star-light mb-5">
-        <!-- <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/team/mihai.jpg" alt="">
-            </a>
-          </div> -->
           <div class="row">
             <div class="col-md-6 col-lg-3">
               <a class="portfolio-item d-block mx-auto" href="#">
@@ -153,6 +142,77 @@
       <div class="container">
         <h2 class="text-center text-uppercase">Progress Blog</h2>
         <hr class="star-dark mb-5">
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <h3>Construction Site Data Capturing</h3>
+            <h6>March 7</h6>
+
+            <h5>Data Collection</h5>
+            <p class="entry blog-post">The drone has been repaired and is ready for flight. The team was fortunate enough to find a a 100m x 100m construction site. Mihai showed expert drone control and the team was able to collect two sets of data through manual flight. The combined data sets were run through the pipeline on AWS, creating outstanding results.</p>
+
+            <div class="col-sm-10 offset-sm-1 center-text">
+              <img class="img-fluid" src="img/progress_updates/odm-orthophoto-downsample.png" width="50%"alt="">
+              <p>Point cloud orthographic photo.</p>
+            </div>
+
+            <p class="entry blog-post">The data is captured using a GoPro Hero5 as the camera issues are still preventing the team from being able to take pictures faster than one picture in 12 seconds. Bonus feature that the team got to test is the automatic landing of the drone when the battery levels are critically low. Although that cost the drone one of its standing carbon fiber legs, it's still in good shape and ready to fly next weekend for further data collection.</p>
+
+            <h5>Website</h5>
+            <p class="entry blog-post">Currently the website is going through design critiques and restructuring to improve user experience and the overall interface. The team is also thinking of creative ways to prepare media and data for the Symposium. We thought of a few fun things to show, come check us out on March 23rd at the Davis Center.</p>
+          </div>
+        </div>
+
+        <hr class="star-dark mb-5">
+
+        <!-- Section Break  -->
+
+        <div class="row">
+          <div class="col-sm-10 offset-sm-1">
+            <h3>The Team Faces Some Hurdles</h3>
+            <h6>February 28</h6>
+
+            <h5>The Camera</h5>
+            <p class="entry blog-post">Over the past week Hugo worked tirelessly to get the camera hardware to communicate through ROS and be able to capture images in flight. From discussions with E-Con Systems, the company that provided the camera solution, it should be able to take full resolution (13MP) stills at 9 frames per second. However, after receiving the source code for the camera mid-February, the camera can only do one frame every 12 seconds. Thus, this solution is deemed insufficient and alternatives have to be considered.</p>
+
+            <h5>The Drone</h5>
+            <p class="entry blog-post">A lot of progress made to prepare the drone for flight. Below is the set up for the tethered dynamic testing. We used this to tune parameters as well as get some experience controlling the drone.</p>
+
+            <div class="col-sm-10 offset-sm-1 center-text">
+              <img class="img-fluid" src="img/progress_updates/tethered_test_setup.jpg" width="50%"alt="">
+              <p>Rishab tightening the rotor nuts before testing.</p>
+            </div>
+            <p class="entry blog-post">Here is some footage of our drone in action:</p>
+
+            <video width="100%" controls muted>
+              <source src="https://s3.amazonaws.com/autonomappr-storage/tethered_dynamic_test.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <br>
+            <p class="entry blog-post">Second free flight after static and tethered dynamic testing lasted approximately 15 seconds until the drone crashed into the wall, breaking the carbon fiber rotor arm as well as one of the motors. Although a set back, the team is optimistic to have the drone up an running by the end of the week to start testing outside far away from walls that come out of nowhere.</p>
+
+            <h5>Data from flight</h5>
+            <p class="entry blog-post">Although short flight, the drone was able to collect 15 images which are ran through the data processing pipeline. The results are not expected to be good from a small amount of images as well as unsteady flight. However, despite prediction, a lot of features were captured. As can be seen from the point cloud below,</p>
+
+            <div class="col-sm-10 offset-sm-1 center-text">
+              <img class="img-fluid" src="img/progress_updates/point_cloud_data_1.png" alt="">
+              <p>Point cloud from the first (indoor) flight test.</p>
+            </div>
+
+            <h5>Communication with the Drone</h5>
+            <p class="entry blog-post">Communicating with the drone for autonomous flight requires a mission to be loaded onto the drone. We can simulate full autonomy, however we are currently working on establishing a link with the drone through ROS to make it a reality. The video shows the drone take-off and completion of a mission set out by multiple waypoints around 8 Hickory St West, after visiting every waypoint the drone returns to launch point.</p>
+
+            <video width="100%" controls muted>
+              <source src="https://s3.amazonaws.com/autonomappr-storage/sim_autonomy.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <br>
+          </div>
+        </div>
+
+        <hr class="star-dark mb-5">
+
+        <!-- Section Break  -->
 
         <div class="row">
           <div class="col-sm-10 offset-sm-1">
